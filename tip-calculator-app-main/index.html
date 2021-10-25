@@ -32,53 +32,67 @@
             <h3 class="color-text-input">Bill</h3>
             <form class="form-input">
                 <i class="icon-dollar"><img src="images/icon-dollar.svg"></i>
-                <input class="field-input" type="text" name="bill" id="bill_value">
+                <input class="field-input" type="text" name="bill" id="bill_value" placeholder="0">
             </form>
             <!-- opsi pilih tip -->
-            div
-            <h3 class="color-text-input">Select Tip %</h3>
-            <div class="option-tip">
-                <div class="flex-row">
-                    <div class="tip">
-                        5%
-                    </div>
-                    <div class="tip tip-center">
-                        10%
-                    </div>
-                    <div class="tip">
-                        15%
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <div class="tip">
-                        25%
-                    </div>
-                    <div class="tip tip-center">
-                        50%
-                    </div>
-                    <div class="tip">
-                        custom
-                    </div>
+            <div class="form-container">
+                <h3 class="color-text-input">Select Tip %</h3>
+                <div class="option-tip">
+                    <form class="radio-form">
+                        <div class="flex-row">
+                            <div class="tip">
+                                <input type="radio" name="tip-radio" id="radio5" value="5">
+                                <label for="radio5">5%</label>
+                            </div>
+                            <div class="tip tip-center">
+                                <input type="radio" name="tip-radio" id="radio10" value="10">
+                                <label for="radio5">10%</label>
+                            </div>
+                            <div class="tip">
+                                <input type="radio" name="tip-radio" id="radio15" value="15">
+                                <label for="radio5">15%</label>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="tip">
+                                <input type="radio" name="tip-radio" id="radio25" value="25">
+                                <label for="radio5">25%</label>
+                            </div>
+                            <div class="tip tip-center">
+                                <input type="radio" name="tip-radio" id="radio50" value="50">
+                                <label for="radio5">50%</label>
+                            </div>
+                            <div class="tip-custom tip">
+                                <input type="radio" name="tip-radio" id="radio5" value="custom">
+                                <label for="radio5">Custom</label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- Input jumlah Orang -->
-            <h3 class="color-text-input">Number of People</h3>
-            <input type="number" name="">
+            <div class="form-container">
+                <h3 class="color-text-input">Bill</h3>
+                <form class="form-input">
+                    <i class="icon-person"><img src="images/icon-person.svg"></i>
+                    <input class="field-input" type="text" name="people" id="people_value" placeholder="0">
+                </form>
+            </div>
         </div>
         <div class="result-container">
-            <div class="field-tip-amount">
+            <div class="field-result-amount">
                 <div id="tip-amount">
                     <h3>Tip amount</h3>
-                    <span>/ person</span>
+                    <span class="sub-text">/ person</span>
                 </div>
-                <h1>% <span id="Total-amount-value">0.00</span></h1>
+                <h1>$<span class="align-right" id="Total-amount-value">0.00</span></h1>
             </div>
-            <div class="field-total-amount">
+            <div class="field-result-amount">
                 <div id="total-amount">
                     <h3>Total</h3>
-                    <span>/ person</span>
+                    <span class="sub-text">/ person</span>
                 </div>
-                <h1>% <span id="Total-amount-value">0.00</span></h1>
+                <h1>$<span class="align-right" id="Total-amount-value">0.00</span></h1>
             </div>
             <button>Reset</button>
         </div>
